@@ -15,8 +15,9 @@ struct MoveButtonView: View {
     var body: some View {
         Button(action: action) {
             Text(text)
+                .font(.custom("AmericanTypewriter",fixedSize: 36)).bold(true)
                 .frame(width: 60, height: 60)
-                .foregroundColor(Color.black)
+                .foregroundColor(.orange)
                 .background(.white)
                 .clipShape(Circle())
         }
@@ -27,7 +28,7 @@ struct MoveButtonView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             Color(.orange)
-            MoveButtonView(text: "Test") {
+            MoveButtonView(text: "L") {
                 //
             }
         }

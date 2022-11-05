@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct PlayerView: View {
+
+    var playerPosition: Double
+    var baseSize: Double
+    var yPosition: Double
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NinjaView()
+            .frame(width: baseSize, height: baseSize)
+            .position(x: playerPosition, y: yPosition)
+            .animation(.default, value: playerPosition)
     }
 }
 
 struct PlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerView()
+        PlayerView(playerPosition: 50, baseSize: 100, yPosition: 50)
     }
 }
