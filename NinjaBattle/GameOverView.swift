@@ -43,7 +43,18 @@ struct GameOverView: View {
                 ActionButtonView(actionButtonText: "ЗАНОВО",
                                  actionButtonDisabled: false) {
                     score = 0
-                    page = .game
+                    withAnimation {
+                        page = .game
+                    }
+                }
+
+                ActionButtonView(actionButtonText: "ДОМОЙ",
+                                 actionButtonDisabled: false) {
+                    score = 0
+                    withAnimation {
+                        page = .start
+                    }
+
                 }
             }
         }
