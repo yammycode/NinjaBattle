@@ -14,20 +14,11 @@ enum Page {
 struct ContentView: View {
 
     @State private var page = Page.start
-
-    @State var score = 0
+    @State private var score = 0
 
     var body: some View {
         VStack {
-//            if startView {
-//                StartView(startView: $startView, gameView: $gameView)
-//            } else if gameView {
-//                GameView(gameView: $gameView, gameOverView: $gameOverView, score: $score)
-//            } else if gameOverView {
-//                //GameOverView(score: score)
-//            }
             switch page {
-
             case .start:
                 StartView(page: $page)
             case .game:

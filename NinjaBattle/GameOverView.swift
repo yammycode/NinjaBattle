@@ -12,6 +12,9 @@ struct GameOverView: View {
     @Binding var page: Page
     @Binding var score: Int
 
+    @AppStorage("maxScore") var maxScore: Int = 0
+
+    @State private var currentMaxScore = 0
 
     var body: some View {
         ZStack {
@@ -27,6 +30,15 @@ struct GameOverView: View {
                     Text(score.formatted())
                         .font(.custom("AmericanTypewriter", fixedSize: 24)).bold(true)
                 }
+
+                Text(score > currentMaxScore ? "Новый рекорд!" : "Рекорд: \(currentMaxScore)")
+                    .onAppear {
+                        currentMaxScore = maxScore
+                        // Сохраняем текущий рекорд
+                        if score > maxScore {
+                            maxScore = score
+                        }
+                    }
 
                 ActionButtonView(actionButtonText: "ЗАНОВО",
                                  actionButtonDisabled: false) {

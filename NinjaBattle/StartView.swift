@@ -18,7 +18,7 @@ struct StartView: View {
                 .ignoresSafeArea()
             VStack(spacing: 20) {
                 ZStack {
-                    NinjaView().frame(width: 100, height: 100)
+                    NinjaView(color: .black).frame(width: 100, height: 100)
                     WeaponView().frame(width: 50, height: 50)
                         .offset(x: -35, y: 50)
                 }.padding(.bottom, 20)

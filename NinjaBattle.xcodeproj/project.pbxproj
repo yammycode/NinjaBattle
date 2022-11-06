@@ -7,13 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C86CCF752916D39F00C78DE9 /* EnemyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86CCF742916D39F00C78DE9 /* EnemyView.swift */; };
-		C86CCF772916D58500C78DE9 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86CCF762916D58500C78DE9 /* PlayerView.swift */; };
-		C86CCF792916DC0600C78DE9 /* PlayerWeaponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86CCF782916DC0600C78DE9 /* PlayerWeaponView.swift */; };
-		C86CCF7B2916EDBD00C78DE9 /* EnemyWeaponView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86CCF7A2916EDBD00C78DE9 /* EnemyWeaponView.swift */; };
 		C86CCF7D2916FB1700C78DE9 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86CCF7C2916FB1700C78DE9 /* GameOverView.swift */; };
 		C86CCF7F2916FCC700C78DE9 /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86CCF7E2916FCC700C78DE9 /* ActionButtonView.swift */; };
 		C86CCF812916FF3900C78DE9 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86CCF802916FF3900C78DE9 /* StartView.swift */; };
+		C8B7D3102917E23400CBAA26 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B7D30F2917E23400CBAA26 /* MessageView.swift */; };
 		C8DF69652915359100568FD9 /* NinjaBattleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DF69642915359100568FD9 /* NinjaBattleApp.swift */; };
 		C8DF69672915359100568FD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8DF69662915359100568FD9 /* ContentView.swift */; };
 		C8DF69692915359200568FD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8DF69682915359200568FD9 /* Assets.xcassets */; };
@@ -27,13 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C86CCF742916D39F00C78DE9 /* EnemyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyView.swift; sourceTree = "<group>"; };
-		C86CCF762916D58500C78DE9 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		C86CCF782916DC0600C78DE9 /* PlayerWeaponView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerWeaponView.swift; sourceTree = "<group>"; };
-		C86CCF7A2916EDBD00C78DE9 /* EnemyWeaponView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyWeaponView.swift; sourceTree = "<group>"; };
 		C86CCF7C2916FB1700C78DE9 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		C86CCF7E2916FCC700C78DE9 /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
 		C86CCF802916FF3900C78DE9 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		C8B7D30F2917E23400CBAA26 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		C8DF69612915359100568FD9 /* NinjaBattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NinjaBattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8DF69642915359100568FD9 /* NinjaBattleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinjaBattleApp.swift; sourceTree = "<group>"; };
 		C8DF69662915359100568FD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,16 +76,13 @@
 				C8DF697A2915984A00568FD9 /* GameView.swift */,
 				C86CCF7C2916FB1700C78DE9 /* GameOverView.swift */,
 				C86CCF7E2916FCC700C78DE9 /* ActionButtonView.swift */,
+				C8B7D30F2917E23400CBAA26 /* MessageView.swift */,
 				C86CCF802916FF3900C78DE9 /* StartView.swift */,
 				C8DF69722915384300568FD9 /* NinjaView.swift */,
 				C8DF69742915437900568FD9 /* WeaponView.swift */,
 				C8DF69762915969100568FD9 /* ScoreBarView.swift */,
 				C8DF69782915978E00568FD9 /* ActionBarView.swift */,
 				C8DF697C2915A8D700568FD9 /* MoveButtonView.swift */,
-				C86CCF742916D39F00C78DE9 /* EnemyView.swift */,
-				C86CCF7A2916EDBD00C78DE9 /* EnemyWeaponView.swift */,
-				C86CCF762916D58500C78DE9 /* PlayerView.swift */,
-				C86CCF782916DC0600C78DE9 /* PlayerWeaponView.swift */,
 				C8DF69682915359200568FD9 /* Assets.xcassets */,
 				C8DF696A2915359200568FD9 /* Preview Content */,
 			);
@@ -176,19 +167,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B7D3102917E23400CBAA26 /* MessageView.swift in Sources */,
 				C8DF69752915437900568FD9 /* WeaponView.swift in Sources */,
 				C8DF69672915359100568FD9 /* ContentView.swift in Sources */,
 				C8DF69732915384300568FD9 /* NinjaView.swift in Sources */,
-				C86CCF7B2916EDBD00C78DE9 /* EnemyWeaponView.swift in Sources */,
-				C86CCF772916D58500C78DE9 /* PlayerView.swift in Sources */,
 				C8DF69772915969100568FD9 /* ScoreBarView.swift in Sources */,
 				C86CCF812916FF3900C78DE9 /* StartView.swift in Sources */,
 				C8DF69792915978E00568FD9 /* ActionBarView.swift in Sources */,
-				C86CCF752916D39F00C78DE9 /* EnemyView.swift in Sources */,
 				C86CCF7F2916FCC700C78DE9 /* ActionButtonView.swift in Sources */,
 				C8DF697D2915A8D700568FD9 /* MoveButtonView.swift in Sources */,
 				C8DF69652915359100568FD9 /* NinjaBattleApp.swift in Sources */,
-				C86CCF792916DC0600C78DE9 /* PlayerWeaponView.swift in Sources */,
 				C86CCF7D2916FB1700C78DE9 /* GameOverView.swift in Sources */,
 				C8DF697B2915984A00568FD9 /* GameView.swift in Sources */,
 			);
